@@ -63,6 +63,13 @@ def main():
     result = simple_calculator(operation, num1, num2)
     print(f"The result of {operation}ing {num1} and {num2} is: {result}")
 
+    while True:
+        operation = input("Enter the operation (add, subtract, multiply, divide): ")
+        if operation == "add" or operation == "subtract" or operation == "multiply" or operation == "divide":
+            break
+        else:
+            print("Invalid operation. Please choose from add, subtract, multiply, or divide.")
+
 
 if __name__ == "__main__":
     main()
